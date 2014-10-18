@@ -95,10 +95,10 @@ def distance(id1, id2):
 
 def collision():
     points = 0
-    for bub in range(len(bub_id) -1, -1, -1):
+    for bub in range(len(bub_id)-1, -1, -1):
         if distance(ship_id2, bub_id[bub]) < (SHIP_R + bub_r[bub]):
             points += (bub_r[bub] + bub_speed[bub])
-            del_(bub)
+            del_bubble(bub)
     return points
 
 score = 0
