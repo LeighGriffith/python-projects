@@ -18,7 +18,8 @@ while feeling_brave:
     else:
         print('No ghost!')
         print('You enter the next room...')
-        score = score + 1
+        score = score + 1 
+        
 print('Run away!')
 print('Game over! You scored', score)
     
