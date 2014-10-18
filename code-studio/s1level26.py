@@ -17,7 +17,7 @@ artist = Turtle()
 artist.pensize(7)
 artist.pencolor('orange')
 
-for i in range(4):
+for count in range(4):
     artist.forward(100)
     artist.right(90)
 
