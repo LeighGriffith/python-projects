@@ -21,6 +21,7 @@ class MyArtist(turtle.Turtle):
         self.draw_a_square(length + 20)
         self.draw_a_square(length + 30)
         self.draw_a_square(length + 40)
+
     def spiral(self,length=100):
         self.forward(length)
         self.right(90)
@@ -37,12 +38,20 @@ class MyArtist(turtle.Turtle):
         self.forward(length + 30)
         self.right(90)
         self.forward(length + 35)
-    def draw_a_snowman(self,length=100):
-         self.left(90)
-         for count in range(360):
-             self.forward(1)
-             self.left(1)
-         
+    
+    def draw_snowman(self,length):
+    distances = [(length) * 0.5, (length) * 0.3,(length) * 0.2]
+    for counter in range(6):
+        distance = distances[counter if counter < 3 else 5-counter]
+
+        for degree in range(90):
+            self.forward(distance)
+            self.right(2)
+
+        if counter != 2:
+            self.left(180)
+            self.forward(2)
+      
      
             
             
