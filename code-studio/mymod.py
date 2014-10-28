@@ -1,10 +1,15 @@
 import random
+<<<<<<< HEAD
 import turtle
+=======
+ 
+>>>>>>> origin/master
 
  
 def random_color():
     return (random.random(),random.random(),random.random())
 
+<<<<<<< HEAD
 class MyArtist(turtle.Turtle):
     def draw_a_square(self,length=100):
         for count in range(4): 
@@ -44,3 +49,7 @@ class MyArtist(turtle.Turtle):
          
             
            
+=======
+ 
+    
+>>>>>>> origin/master
