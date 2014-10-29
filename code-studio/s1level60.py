@@ -5,8 +5,14 @@ for (var count = 0; count < 4; count++) {
   turnRight(90);
 }
 '''
-import mymod
+ 
 import turtle
 
- 
-mymod.draw_a_square()
+artist = turtle.Turtle()
+artist.pensize(7)
+
+def draw_a_square(length):
+        for count in range(4): 
+            artist.forward(length)
+            artist.right(90)
+draw_a_square(100)

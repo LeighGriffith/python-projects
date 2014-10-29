@@ -1,28 +1,24 @@
 import random
-<<<<<<< HEAD
-import turtle
-=======
  
->>>>>>> origin/master
-
+import turtle
+ 
  
 def random_color():
     return (random.random(),random.random(),random.random())
-
-<<<<<<< HEAD
-class MyArtist(turtle.Turtle):
-    def draw_a_square(self,length=100):
+ 
+ 
+def draw_a_square(self,length):
         for count in range(4): 
             self.forward(length)
             self.right(90)
-    def square_counter(self,length=100):
+def square_counter(self,length):
         self.draw_a_square(length)
         self.draw_a_square(length + 10)
         self.draw_a_square(length + 20)
         self.draw_a_square(length + 30)
         self.draw_a_square(length + 40)
 
-    def spiral(self,length=100):
+def spiral(self,length):
         self.forward(length)
         self.right(90)
         self.forward(length + 5)
@@ -39,7 +35,7 @@ class MyArtist(turtle.Turtle):
         self.right(90)
         self.forward(length + 35)
     
-    def draw_snowman(self,length):
+def draw_snowman(self,length):
     distances = [(length) * 0.5, (length) * 0.3,(length) * 0.2]
     for counter in range(6):
         distance = distances[counter if counter < 3 else 5-counter]
@@ -51,14 +47,38 @@ class MyArtist(turtle.Turtle):
         if counter != 2:
             self.left(180)
             self.forward(2)
+
+def draw_a_circle(self,length):
+    for count in range(360):
+        self.forward(length)
+        self.right(length)
+
+
+def draw_a_triangle(self,length):
+    for count in range(3):
+        self.forward(length)
+        self.right(120)
+
+
+def draw_a_house(self, length):
+    def draw_a_square(length):
+        for count in range(4): 
+            self.forward(length)
+            self.right(90)
+    def draw_a_triangle(length):
+        for count in range(3):
+            self.forward(length)
+            self.right(120)
+    draw_a_square(length)
+    self.forward(length)
+    self.right(30)
+    draw_a_triangle(length)
+   
+        
       
      
             
             
          
             
-           
-=======
- 
-    
->>>>>>> origin/master
+            

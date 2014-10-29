@@ -18,6 +18,7 @@ import turtle
 
 artist = turtle.Turtle()
 artist.pensize(7)
+artist.speed(100)
 
 artist.right(230)
 

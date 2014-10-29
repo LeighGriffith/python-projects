@@ -11,52 +11,46 @@ for (var counter = 0; counter < 6; counter++) {
   }
   if (counter != 2) {
     turnLeft(180);
-<<<<<<< HEAD
+ 
 }
 '''
-import mymod
+import turtle
  
-artist = mymod.MyArtist()
+artist = turtle.Turtle()
 artist.pensize(7)
 artist.pencolor('blue')
+artist.left(180)
+artist.speed(100)
+
+def draw_snowman(length):
+        distances = [(length) * 0.5, (length) * 0.3,(length) * 0.2]
+        for counter in range(6):
+            distance = distances[counter if counter < 3 else 5-counter]
+
+            for degree in range(90):
+                artist.forward(distance)
+                artist.right(2)
+
+            if counter != 2:
+                artist.left(180)
+                artist.forward(2)
 
  
 
-artist.draw_a_snowman(130)
-=======
-    moveForward(100)
-}
-'''
+draw_snowman(5)
+ 
+ 
 
-import turtle
+
+
+ 
 
 
       
-            
-artist = turtle.Turtle()
-artist.pensize(7)
-artist.pencolor('black')
-artist.speed(100)
-artist.left(180)
+ 
 
-def draw_snowman(length):
-    
+ 
 
-    distances = [(length) * 0.5, (length) * 0.3,(length) * 0.2]
-    for counter in range(6):
-        distance = distances[counter if counter < 3 else 5-counter]
-
-        for degree in range(90):
-            artist.forward(distance)
-            artist.right(2)
-
-        if counter != 2:
-            artist.left(180)
-            artist.forward(2)
-
-draw_snowman(5)
-artist.left(180)
-draw_snowman(2)
         
 
 
@@ -64,5 +58,5 @@ draw_snowman(2)
  
 
 
->>>>>>> origin/master
+ 
 

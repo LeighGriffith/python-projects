@@ -17,6 +17,7 @@ import turtle
 
 artist = turtle.Turtle()
 artist.pensize(7)
+artist.left(90)
 
 
 for count in range(4):

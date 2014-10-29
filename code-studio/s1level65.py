@@ -8,13 +8,31 @@ for (counter = 25; counter <= 60; counter += 5) {
 '''
 
 
-import mymod
+import turtle
 
-artist = mymod.MyArtist()
+artist = turtle.Turtle()
 artist.pensize(7)
 artist.pencolor('darkblue')
 
 
+def spiral(length):
+        artist.forward(length)
+        artist.right(90)
+        artist.forward(length + 5)
+        artist.right(90)
+        artist.forward(length + 10)
+        artist.right(90)
+        artist.forward(length + 15)
+        artist.right(90)
+        artist.forward(length + 20)
+        artist.right(90)
+        artist.forward(length + 25)
+        artist.right(90)
+        artist.forward(length + 30)
+        artist.right(90)
+        artist.forward(length + 35)
 
 
-artist.spiral(30)
+
+
+spiral(30)

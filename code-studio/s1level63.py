@@ -25,14 +25,19 @@ for (var count2 = 0; count2 < 4; count2++) {
 }
 '''
 
-import mymod
+import turtle
 
-artist = mymod.MyArtist()
+artist = turtle.Turtle()
 artist.pensize(7)
 artist.pencolor('red')
 
-artist.draw_a_square(50)
-artist.draw_a_square(60)
-artist.draw_a_square(70)
-artist.draw_a_square(80)
-artist.draw_a_square(90)
+def draw_a_square(length):
+        for count in range(4): 
+            artist.forward(length)
+            artist.right(90)
+
+draw_a_square(50)
+draw_a_square(60)
+draw_a_square(70)
+draw_a_square(80)
+draw_a_square(90)
