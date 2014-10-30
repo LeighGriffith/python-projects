@@ -1,16 +1,17 @@
 import random
  
 import turtle
+artist = turtle.Turtle()
  
  
 def random_color():
     return (random.random(),random.random(),random.random())
  
  
-def draw_a_square(self,length):
+def draw_a_square(length):
         for count in range(4): 
-            self.forward(length)
-            self.right(90)
+            artist.forward(length)
+            artist.right(90)
 def square_counter(self,length):
         self.draw_a_square(length)
         self.draw_a_square(length + 10)
@@ -48,30 +49,30 @@ def draw_snowman(self,length):
             self.left(180)
             self.forward(2)
 
-def draw_a_circle(self,length):
+def draw_a_circle(length):
     for count in range(360):
-        self.forward(length)
-        self.right(length)
+        artist.forward(length)
+        artist.right(length)
 
 
-def draw_a_triangle(self,length):
+def draw_a_triangle(length):
     for count in range(3):
-        self.forward(length)
-        self.right(120)
+        artist.forward(length)
+        artist.right(120)
 
 
-def draw_a_house(self, length):
+def draw_a_house(length):
     def draw_a_square(length):
         for count in range(4): 
-            self.forward(length)
-            self.right(90)
+            artist.forward(length)
+            artist.right(90)
     def draw_a_triangle(length):
         for count in range(3):
-            self.forward(length)
-            self.right(120)
+            artist.forward(length)
+            artist.right(120)
     draw_a_square(length)
-    self.forward(length)
-    self.right(30)
+    artist.forward(length)
+    artist.right(30)
     draw_a_triangle(length)
    
         
