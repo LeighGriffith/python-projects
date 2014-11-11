@@ -26,7 +26,7 @@ answers = [
     'Ask again later. ',
     'My reply is no. ',
     'Outlook good. ',
-    'Dont count on it. ',
+    'Dont count on . ',
     'Yes, in due time. ',
     'My sources say no. ',
     'Definitely not. ',
