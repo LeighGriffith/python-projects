@@ -1,286 +1,235 @@
 
+import random
 
 print('The Cell Organelle Quiz Of Doom...')
 score = 0
 print('Make sure you spell right...')
-print('There is a tiny error in some of the questions where'
-      'if you put the right answer '
-      ' it will say its correct then incorrect.(you got it right)')
+
 print('Also if you see the correct! twice, it means you got 2 points')
-while True:
 
-    print('Alright then, first question, what is the Mitochondria??')
-    question = input('< ').strip().lower()
 
-    if 'power' in question:
+
+
+
+
+def mitochondria():
+    global score
+    
+    print('what is the Mitochondria??')
+    answer = input('< ').strip().lower()
+
+    if 'power' in answer or 'energy' in answer:
         print('correct!')
         score = score + 1
-             
-    if 'energy' in question:
-        print('correct!')
-        score = score + 1
-             
-            
-
+        print('You have', score , 'points ')
+        
     else:
         print('sorry, thats incorrect...')
+        print('You have', score , 'points ')
 
     
+def cell_membrane():
+    global score
 
-    print('Second question, what is the Cell Membrane??')
-    question = input('< ').strip().lower()
+    print('what is the Cell Membrane??')
+    answer = input('< ').strip().lower()
 
-    if 'in' in question:
+    if 'in' in answer or 'out' in answer:
         print('correct!')
         score = score + 1
-            
-            
-
-    if 'out' in question:
-        print('correct!')
-        score = score + 1
-             
+        print('You have', score , 'points ')
             
     else:
         print('sorry, thats incorrect...')
+        print('You have', score , 'points ')
 
+def cell_wall():
+    global score
+    
+    print(' what is the Cell Wall??')
+    answer = input('< ').strip().lower()
 
-    print('Third question, what is the Cell Wall??')
-    question = input('< ').strip().lower()
-
-    if 'shape' in question:
+    if 'shape' in answer or 'support' in answer:
         print('correct!')
         score = score + 1
-             
-            
-
-    if 'support' in question:
-        print('correct!')
-        score = score + 1
-            
-            
+        print('You have', score , 'points ')
 
     else:
         print('sorry, thats incorrect...')
+        print('You have', score , 'points ')
         
             
+def chromosome():
+    global score
+    
+    print(' what is the Chromosone/DNA??')
+    answer = input('< ').strip().lower()
 
-    print('Fourth question, what is the Chromosone/DNA??')
-    question = input('< ').strip().lower()
-
-    if 'contains' in question:
+    if 'contains' in answer or 'trait' in answer or 'store' in answer:
         print('correct!')
         score = score + 1
+        print('You have', score , 'points ')
+        
             
-           
-
-    if 'trait' in question:
-        print('correct!')
-        score = score + 1
-            
-            
-
-    if 'store' in question:
-        print('correct!')
-        score = score + 1
-            
-            
-
     else:
         print('sorry, thats incorrect...')
+        print('You have', score , 'points ')
 
+def cytoplasm():
+    global score
+    
+    print(' what is the Cytoplasm??')
+    answer = input('< ').strip().lower()
 
-    print('Fifth question, what is the Cytoplasm??')
-    question = input('< ').strip().lower()
-
-    if 'inside' in question:
+    if 'inside' in answer or 'activities' in answer:
         print('correct!')
         score = score + 1
+        print('You have', score , 'points ')
             
-            
-
-    if 'activities' in question:
-        print('correct!')
-        score = score + 1
-            
-            
-
     else:
         print('sorry, thats incorrect...')
+        print('You have', score , 'points ')
 
+def ribosome():
+    global score
 
-    print('Sixth question, what is the Ribosome??')
-    question = input('< ').strip().lower()
+    print(' what is the Ribosome??')
+    answer = input('< ').strip().lower()
 
-    if 'proteins' in question:
+    if 'proteins' in answer or 'activities' in answer or 'function' in answer:
         print('correct!')
         score = score + 1
-
-    if 'activities' in question:
-        print('correct!')
-        score = score + 1       
-
-    if 'function' in question:
-        print('correct!')
-        score = score + 1
-            
-            
-
+        print('You have', score , 'points ')
     else:
         print('sorry, thats incorrect...')
+        print('You have', score , 'points ')
         
  
+def nucleus():
+    global score
+    
+    print(' what is the Nucleus??')
+    answer = input('< ').strip().lower()
 
-    print('Seventh question, what is the Nucleus??')
-    question = input('< ').strip().lower()
-
-    if 'control' in question:
+    if 'control' in answer or 'leader' in answer or 'activities' in answer:
         print('correct!')
         score = score + 1
-
-    if  'leader' in question:
-        print('correct!')
-        score = score + 1
-                
-           
-
-    if  'activities' in question:
-        print('correct!')
-        score = score + 1
-             
-            
+        print('You have', score , 'points ')
 
     else:
-        print('sorry, thats incorrect...')   
+        print('sorry, thats incorrect...')
+        print('You have', score , 'points ')
     
-
-    print('Eighth question, what is the Chloroplast(Plants only)??')
+def chloroplast():
+    global score
+    
+    print(' what is the Chloroplast(Plants only)??')
     print('IF YOU CAN SPELL WHat IT CONTAINS, YOU GET 5 POINTS(has to be spelled right')
-    question = input('< ').strip().lower()
+    answer = input('< ').strip().lower()
 
-    if 'chlorophyll' in question:
-        print('correct!')
+    if 'chlorophyll' in answer:
+        print('you spelled it correct!')
         score = score + 5
-            
-    if 'make' in question:
-        print('correct!')
-        score = score + 1        
+        print('You have', score , 'points ')
 
-    if ' trap' in question:
+    else:
+        print('sorry, thats incorrect')
+        print('You have', score , 'points ')
+        
+            
+    if 'make' in answer or 'trap' in answer:
         print('correct!')
         score = score + 1
-            
-            
+        print('You have', score , 'points ') 
 
     else:
         print('sorry, thats incorrect...')
-
-
-    print('Nineth question, what is the Smooth and rough E.R??')
+        print('You have', score , 'points ')
+        
+def smooth_rough_ER():
+    global score
+    
+    print(' what is the Smooth and rough E.R??')
     print('Worth 3 points')
-    question = input('< ').strip().lower()
+    answer = input('< ').strip().lower()
 
-    if 'protein' in question:
+    if 'protein' in answer or 'transport' in answer or 'store' in answer or 'ribosomes' in answer:
         print('correct!')
         score = score + 3
-
-    if 'tranport' in question:
-        print('correct!')
-        score = score + 3
-             
-    if 'stores' in question:
-        print('correct!')
-        score = score + 3          
-
-    if 'ribosome' in question:
-        print('correct!')
-        score = score + 3
-             
-        
-
+        print('You have', score , 'points ')
     else:
-        print('sorry, thats incorrect...')       
+        print('sorry, thats incorrect...')
+        print('You have', score , 'points ')
 
+def golgi_body():
+    global score
+    
+    print('what is the  Golgi Body??')
+    answer = input('< ').strip().lower()
 
-    print('Thenth question, what is the  Golgi Body??')
-    question = input('< ').strip().lower()
-
-    if 'package' in question:
+    if 'package' in answer or 'transport' in answer:
         print('correct!')
         score = score + 1
+        print('You have', score , 'points ')
             
-            
-
-    if 'tranport' in question:
-        print('correct!')
-        score = score + 1
-            
-           
 
     else:
         print('sorry, thats incorrect...')
+        print('You have', score , 'points ')
 
 
 
             
            
 
+def lysosome():
+    global score
 
+    print('what is the  Lysosome??')
+    answer = input('< ').strip().lower()
 
-    print('Eleventh question, what is the  Lysosome??')
-    question = input('< ').strip().lower()
-
-    if 'clean' in question:
+    if 'clean' in answer or 'break down' in answer or 'breakdown' in answer:
         print('correct!')
         score = score + 1
-        
-    if 'break down' in question:
-        print('correct!')
-        score = score + 1         
-           
+        print('You have', score , 'points ')
 
-    if 'breakdown' in question:
+    else:
+        print('sorry, thats incorrect...')
+        print('You have', score , 'points ')
+
+def vacuole():
+    global score
+    print(' what is the Vacuole??')
+    answer = input('< ').strip().lower()
+
+    if 'storage' in answer:
         print('correct!')
         score = score + 1
+        print('You have', score , 'points ')
             
           
 
     else:
         print('sorry, thats incorrect...')
+        print('You have', score , 'points ')
 
-    print('Twelth question, what is the Vacuole??')
-    question = input('< ').strip().lower()
+        
+questions = [
+    mitochondria,
+    cell_membrane,
+    chromosome,
+    cell_wall,
+    cytoplasm,
+    nucleus,
+    ribosome,
+    chloroplast,
+    smooth_rough_ER,
+    golgi_body,
+    lysosome,
+    vacuole
+]
 
-    
-           
-
-    if 'storage' in question:
-        print('correct!')
-        score = score + 1
-            
-          
-
-    else:
-        print('sorry, thats incorrect...')
-
-
-    print('Congratulations!!, you scored', score , '!')
-    
-    print('Play agian?')
-    question = input('< ')
-
-    if 'no' in question:
-        print('ok')
-        break
-
-    if 'yes'in question:
-        print('sure')
-
-            
-
-
-         
-
-
-    
+while True:
+    current = random.choice(questions)
+    current()
     
